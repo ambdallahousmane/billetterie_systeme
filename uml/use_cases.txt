@@ -1,0 +1,9 @@
+Administrateur :
+- Gerer les utilisateurs
+- Consulter les statistiques
+- Sauvegarder la base
+
+Caissier :
+- Vendre un ticket
+- Annuler un ticket
+- Consulter ses ventes

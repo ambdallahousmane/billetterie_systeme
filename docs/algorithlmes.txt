@@ -1,0 +1,5 @@
+DEBUT
+date = YYYYMMDD
+compteur = dernier_ticket + 1
+numero = TCK-date-compteur
+FIN

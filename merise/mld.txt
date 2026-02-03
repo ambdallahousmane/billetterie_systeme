@@ -1,0 +1,3 @@
+UTILISATEUR (id PK, nom, role)
+VENTE (id PK, date, total, utilisateur_id FK)
+TICKET (id PK, numero, statut, vente_id FK)

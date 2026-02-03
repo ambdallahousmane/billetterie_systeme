@@ -1,0 +1,6 @@
+UTILISATEUR (id, nom, role)
+VENTE (id, date, total)
+TICKET (id, numero, statut)
+
+UTILISATEUR (1,n) - effectue - (1,1) VENTE
+VENTE (1,n) - contient - (1,1) TICKET

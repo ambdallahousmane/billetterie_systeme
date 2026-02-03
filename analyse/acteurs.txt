@@ -1,0 +1,4 @@
+- Administrateur
+- Caissier
+- Superviseur
+- Systeme de sauvegarde

@@ -1,0 +1,4 @@
+Caissier -> Système : demander vente
+Système -> DB : enregistrer ticket
+DB -> Système : OK
+Système -> Caissier : ticket généré

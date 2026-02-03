@@ -1,0 +1,4 @@
+Utilisateur (id, nom, role, login, password)
+Ticket (id, numero, date, montaant, statut)
+Vente (id, date, total, caissier_id)
+Annulation (id, date, ticket_id) 
