@@ -12,4 +12,4 @@ case $choix in
 4) mysqldump billeterie > backups/save_$(date +%F).sql ;;
 esac
 
-echo "$(date) - Action utilisateur" >> logs/actions.log
+echo "$(date)  Action utilisateur" >> logs/actions.log
