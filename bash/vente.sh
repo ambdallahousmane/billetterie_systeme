@@ -37,15 +37,15 @@ COUNT=$(mysql -u$DB_USER -p$DB_PASS -D $DB_NAME -sN \
 NUMERO="TCK-$DATE-$(printf '%04d' $((COUNT + 1))"
 
 #Transaction MySQL
-mysql -u$DB_USER -p$DB_PASS -D $DB_NAME <<EOF
+mysql -u billet_user -phillet123 billetterie <<EOF
 START TRANSACTION;
 
 INSERT INTO vente(date_vente, total utilisateur_id)
 VALUES (NOW(), $MONTANT,
        (SELECT id FROM utilissateur WHERE login='$LOGIN'));
 
-INSERT INTO ticket(numero, statut, vente_id)
-VALUES ('$NUMERO', 'VENDU', Last_INSERT_ID());
+INSERT INTO ticket(numero, date_vente, montant, caissier)
+VALUES ('$NUMERO', NOW(),'$montant', '$login');
 
 COMMIT;
 EOF
